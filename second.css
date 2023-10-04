@@ -1,0 +1,281 @@
+body {
+  background-color: pink;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
+}
+#play-pause {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  transition: box-shadow 0.5s ease;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  background-color: #ffe5b4;
+  position: relative;
+  left: 10px;
+  right: 50px;
+}
+#play-pause:hover {
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+}
+#play-pause:active {
+  box-shadow: -5px -5px 5px black;
+}
+#audio {
+  display: none;
+}
+.main-div {
+  width: 100vw;
+  height: 550px;
+  position: relative;
+  bottom: 10px;
+  right: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.img-balloon {
+  display: flex;
+  width: 100vw;
+  height: 400px;
+  justify-content: space-evenly;
+}
+.imgmessdiv {
+  width: 500px;
+  height: 340px;
+  background-color: white;
+  position: relative;
+  top: 20px;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.balloon {
+  position: relative;
+  top: 40px;
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffe5b4;
+  right: 100px;
+}
+.balloon1 {
+  position: relative;
+  top: 40px;
+  width: 100px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #ffe5b4;
+  left: 100px;
+}
+.balloon::before,
+.balloon1::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% + 10px);
+  top: 120px;
+  left: 50px;
+  background-color: black;
+  transform: translateX(-50%);
+}
+.balloon::after,
+.balloon1::after {
+  position: relative;
+  content: "";
+  border-bottom: 12px solid black;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  top: 95px;
+  left: 41px;
+}
+#akimemo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+#imgmess {
+  font-size: 16px;
+  font-style: italic;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: #db6c5e;
+}
+#nav {
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+.navbtn {
+  width: 150px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  transition: box-shadow 0.5s ease;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  background-color: #ffe5b4;
+}
+.navbtn:hover {
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+}
+.navbtn:active {
+  box-shadow: -5px -5px 5px black;
+  cursor: pointer;
+}
+.sec-div {
+  width: 100vw;
+  height: 1500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#dendu {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  right: 10px;
+}
+#maa {
+  width: 400px;
+  height: 700px;
+  background-color: white;
+  position: relative;
+  right: 10px;
+  margin-top: 50px;
+}
+#paa {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  right: 10px;
+  margin-top: 50px;
+}
+#avi {
+  width: 400px;
+  height: 600px;
+  background-color: white;
+  position: relative;
+  right: 10px;
+  margin-top: 50px;
+}
+#shilpa-img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  bottom: 10px;
+}
+#avi-img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  bottom: 5px;
+}
+#ma-img {
+  width: 86%;
+  height: 75%;
+  object-fit: cover;
+  position: relative;
+  bottom: 10px;
+  border-radius: 20px;
+}
+#paa-img {
+  width: 90%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 20px;
+  position: relative;
+  bottom: 10px;
+}
+#mesbtn {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  transition: box-shadow 0.5s ease;
+  color: black;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  background-color: #ffe5b4;
+  position: relative;
+  bottom: 20px;
+}
+
+#mesbtn:hover {
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+}
+#mesbtn:active {
+  box-shadow: -5px -5px 5px black;
+  cursor: pointer;
+}
+#dendu,
+#maa,
+#paa,
+#avi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 768px) {
+  #play-pause,
+  .navbtn {
+    width: 95px;
+    height: 50px;
+    font-size: 15px;
+  }
+  .imgmessdiv {
+    width: 350px;
+    height: 330px;
+  }
+  .balloon,
+  .balloon1 {
+    display: none;
+  }
+
+  .main-div {
+    height: auto;
+  }
+
+  /* Add more adjustments as needed */
+}
+
+/* Media query for screens with a maximum width of 480px (e.g., mobile phones) */
+@media (max-width: 480px) {
+  #play-pause,
+  .navbtn {
+    width: 70px;
+    height: 30px;
+    font-size: 10px;
+  }
+  .imgmessdiv {
+    width: 330px;
+    height: 330px;
+  }
+  .balloon1,
+  .balloon {
+    display: none;
+  }
+}

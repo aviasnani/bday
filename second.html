@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>happy birthday</title>
+    <link rel="stylesheet" href="second.css" />
+  </head>
+  <body>
+    <div class="main-div">
+      <div id="nav">
+        <a href="#dendu"><button class="navbtn">Dendu</button></a>
+        <a href="#maa"><button class="navbtn">Maa</button></a>
+        <button id="play-pause">Play Music</button>
+        <a href="#paa"><button class="navbtn">Paa</button></a>
+        <a href="#avi"><button class="navbtn">Kara</button></a>
+      </div>
+      <div class="img-balloon">
+        <div class="balloon1"></div>
+        <div class="imgmessdiv">
+          <img id="akimemo" src="akimemo.png" />
+          <p id="imgmess">
+            Happy Birthday, Bestfriend/Akli/Akshay/Taklya! We are blessed to
+            have you in our lives. Your presence brings us immense joy and
+            happiness. On this special day, we want you to know how much you
+            mean to us. Here's a gift for you, a token of our love and
+            appreciation. May your day be filled with love, laughter, and
+            unforgettable moments. Cheers to another wonderful year ahead!, We
+            love you so much!
+          </p>
+        </div>
+        <div class="balloon"></div>
+      </div>
+    </div>
+    <div class="sec-div">
+      <div id="dendu">
+        <img id="shilpa-img" src="shilpa.PNG" />
+        <a href="shilpa.html"
+          ><button id="mesbtn">Dendu's Message :D</button></a
+        >
+      </div>
+      <div id="maa">
+        <img id="ma-img" src="maa.jpg" />
+        <a href="maa.html"><button id="mesbtn">Maa's Message :D</button></a>
+      </div>
+      <div id="paa">
+        <img id="paa-img" src="paa.jpg" />
+        <a href="paa.html"><button id="mesbtn">Paa's Message :D</button></a>
+      </div>
+      <div id="avi">
+        <img id="avi-img" src="avi.jpg" />
+        <a href="avi.html"><button id="mesbtn">Kara's Message :D</button></a>
+      </div>
+    </div>
+    <audio id="audio" controls loop>
+      <source src="bdaysong.mp3" type="audio/mpeg" />
+      not supported
+    </audio>
+    <script>
+      const playPauseButton = document.getElementById("play-pause");
+      const audio = document.getElementById("audio");
+
+      playPauseButton.addEventListener("click", function () {
+        if (audio.paused) {
+          audio.play();
+          playPauseButton.textContent = "Pause";
+        } else {
+          audio.pause();
+          playPauseButton.textContent = "Play Music";
+        }
+      });
+    </script>
+  </body>
+</html>
